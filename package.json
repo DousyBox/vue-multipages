@@ -1,12 +1,12 @@
 {
   "name": "vue-multipages",
-  "version": "0.1.3",
-  "description": "A multipages scaffold template base on Vue CLI 3.x",
-  "author": "Dousy <dousybox@gmail.com> (https://github.com/DousyBox)",
+  "version": "0.0.0",
+  "description": "A Vue CLI 3 mutiple pages plugin",
+  "author": "Dousy <33720723+dousybox@users.noreply.github.com> (https://github.com/dousybox)",
   "private": true,
-  "bugs": "https://github.com/DousyBox/vue-multipages/issues",
-  "homepage": "https://github.com/DousyBox/vue-multipages",
-  "repository": "https://github.com/DousyBox/vue-multipages.git",
+  "bugs": "https://github.com/dousybox/vue-multipages/issues",
+  "homepage": "https://github.com/dousybox/vue-multipages",
+  "repository": "https://github.com/dousybox/vue-multipages.git",
   "engines": {
     "node": ">=8.9"
   },
