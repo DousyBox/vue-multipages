@@ -5,7 +5,6 @@ const defaults = {
 };
 
 module.exports = (api, projectOptions) => {
-  console.log(api, projectOptions);
   // api.service.run("devserve").then;
   api.registerCommand(
     "customServe",
@@ -23,9 +22,7 @@ module.exports = (api, projectOptions) => {
       }
     },
     async function serve(args, rawArgv) {
-      console.log(projectOptions)
       api.service.run("serve", args, rawArgv).then(function(serveInfo) {
-        console.log(serveInfo);
         serveInfo.server.listeningApp.address().port;
       });
     }
