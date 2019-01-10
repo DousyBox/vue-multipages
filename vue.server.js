@@ -1,28 +1,16 @@
-const ecstatic = require("ecstatic"),
-  os = require("os"),
-  ifaces = os.networkInterfaces(),
-  chalk = require("chalk");
+const ecstatic = require("ecstatic");
 module.exports = {
   before(app) {
     /* a local mock middleware */
-    app.use(ecstatic({ root: "static/mock", baseDir: "/mock" }));
+    app.all(
+      `${process.env.API_CONTEXT}/*`,
+      ecstatic({
+        root: `public/api`,
+        showdir: true,
+        baseDir: process.env.API_CONTEXT
+      })
+    );
   },
-  /* after: (app, server) => {
-    console.log("  - Available on:");
-    Object.keys(ifaces).forEach(function(ifa) {
-      ifaces[ifa].forEach(function(details) {
-        if (details.family === "IPv4") {
-          console.log(
-            "  " +
-              protocol +
-              details.address +
-              ":" +
-              colors.green(port.toString())
-          );
-        }
-      });
-    });
-  }, */
   historyApiFallback: false,
   host: "0.0.0.0",
   public: "",
