@@ -17,6 +17,7 @@
     "debug": "node --inspect-brk=9229 node_modules/@vue/cli-service/bin/vue-cli-service.js customServe"
   },
   "dependencies": {
+    "jquery": "^3.3.1",
     "vue": "^2.5.21"
   },
   "devDependencies": {
