@@ -38,7 +38,7 @@ glob.sync(`${pagesPath}/**/*app.js`).forEach(path => {
     filename: filename,
     title: title,
     template: template,
-    chunks: ["chunk-vendors", "chunk-common", filePath]
+    chunks: ["vendors", "common", filePath]
   };
 });
 
