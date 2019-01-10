@@ -5,7 +5,7 @@ module.exports = {
     app.all(
       `${process.env.API_CONTEXT}/*`,
       ecstatic({
-        root: `public/api`,
+        root: `${process.env.MOCK_API_DIRECTORY}`,
         showdir: true,
         baseDir: process.env.API_CONTEXT
       })
